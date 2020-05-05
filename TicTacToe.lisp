@@ -75,11 +75,11 @@
   ; Win Condition 2
   (if (= (nth 3 horiWin) (nth 4 horiWin) (nth 5 horiWin))
       (if (/= 3 (nth 3 horiWin))
-        (setq winningPlayer (nth 0 horiWin))))
+        (setq winningPlayer (nth 3 horiWin))))
   ; Win Condition 3
   (if (= (nth 6 horiWin) (nth 7 horiWin) (nth 8 horiWin))
       (if (/= 3 (nth 6 horiWin))
-        (setq winningPlayer (nth 0 horiWin))))
+        (setq winningPlayer (nth 6 horiWin))))
   ; Win Condition 4
   (if (= (nth 0 vertiWin) (nth 1 vertiWin) (nth 2 vertiWin))
       (if (/= 3 (nth 0 vertiWin))
@@ -87,19 +87,19 @@
   ; Win Condition 5
   (if (= (nth 3 vertiWin) (nth 4 vertiWin) (nth 5 vertiWin))
       (if (/= 3 (nth 3 vertiWin))
-        (setq winningPlayer (nth 0 vertiWin))))
+        (setq winningPlayer (nth 3 vertiWin))))
   ; Win Condition 6
   (if (= (nth 6 vertiWin) (nth 7 vertiWin) (nth 8 vertiWin))
       (if (/= 3 (nth 6 vertiWin))
-        (setq winningPlayer (nth 0 vertiWin))))
+        (setq winningPlayer (nth 6 vertiWin))))
     ; Win Condition 7
   (if (= (nth 0 diagWin) (nth 1 diagWin) (nth 4 diagWin))
       (if (/= 3 (nth 0 diagWin))
-        (setq winningPlayer (nth 0 diagWin))))
+        (setq winningPlayer (nth 1 diagWin))))
   ; Win Condition 8
   (if (= (nth 0 diagWin) (nth 3 diagWin) (nth 2 diagWin))
       (if (/= 3 (nth 0 diagWin))
-        (setq winningPlayer (nth 0 diagWin))))
+        (setq winningPlayer (nth 3 diagWin))))
   ; Draw Condition
   (if (/= 3 (nth 0 horiWin))
       (if(/= 3 (nth 1 horiWin))
